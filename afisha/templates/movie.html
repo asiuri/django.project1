@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies list</title>
+</head>
+<body>
+{% for movie in movie_list%}
+   <a href="/movie/{{movie.id}}/">Tittle:{{movie.name}}}</a>
+   <p>Created Date:{{movie.created_at}}</p>
+   <hr/>
+{%end for%}
+</body>
+</html>
